@@ -1,0 +1,36 @@
+{
+    "name": "brunolobo/dicdados",
+    "description": "Dicionario de dados do Pacto AI.",
+    "version": "1.0.0",
+    "keywords": [],
+    "homepage": "http://github.com/brunolobo/dicdados",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno Lobo",
+            "email": "bruno.lobo@pactocrm.com.br"
+        }
+    ],
+    "require-dev":{},
+    "require":{
+        "phpunit/phpunit":"^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brunolobo\\Dicdados\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brunolobo\\Dicdados\\DicdadosServiceProvider"
+            ],
+
+            "facades": [
+                "Brunolobo\\Dicdados\\Facades\\Dicdados"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
